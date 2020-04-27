@@ -1,0 +1,38 @@
+app-root {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.app-header {
+    padding: 0 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 60px;
+    transition: all .25s linear;
+
+    @media screen and (min-width: 768px) {
+        height: 110px;
+    }
+
+    &--on-scroll {
+        background-color: rgba(93, 93, 93, 0.7);
+
+        @media screen and (min-width: 768px) {
+            height: 80px;
+        }
+
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            backdrop-filter: blur(31px);
+        }
+    }
+}
+
+.app-main {}
+
+.app-footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 0 15px;
+}

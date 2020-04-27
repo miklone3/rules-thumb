@@ -1,0 +1,62 @@
+thumb-banner {
+    display: block;
+    background-image: url(assets/images/backgrount-banner-submit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thumb-banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 25px;
+    background-color: rgba(255, 255, 255, 0.85);
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
+
+    &__body {
+        flex: 1;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__action {
+        @media screen and (min-width: 768px) {
+            margin-left: 20px;
+        }
+    }
+}
+
+.thumb-banner-text {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: $font-weight-thin;
+}
+
+.thumb-banner-submit {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    min-width: 200px;
+    padding: 10px 20px;
+    text-align: center;
+
+    $font-weight: $font-weight-regular;
+
+    color: $text-color;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 3px solid rgba(#333333, 0.15);
+    transition: all .15s linear;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+}

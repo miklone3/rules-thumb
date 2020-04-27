@@ -1,0 +1,29 @@
+blur-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        bottom: -20px;
+        right: -20px;
+        // background-color: rgba(0, 0, 0, 0.8);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 97%);
+        filter: blur(100px);
+    }
+
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        background-color: rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(31px);
+
+        &:before {
+            content: none;
+        }
+    }
+}

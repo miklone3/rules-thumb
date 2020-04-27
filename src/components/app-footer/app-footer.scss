@@ -1,0 +1,106 @@
+app-footer {
+    display: flex;
+    background-image: linear-gradient(to right, #979797 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: top;
+    background-size: 6px 1px;
+    background-repeat: repeat-x;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 25px 0;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    line-height: 19px;
+    color: $text-color;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.app-footer-content {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin-left: -10px;
+    }
+}
+
+%footer-link {
+    color: $text-color;
+    text-decoration: none;
+}
+
+.app-footer {
+    &__caption {}
+
+    &__link {
+        @extend %footer-link;
+
+        &:before,
+        &:after {
+            display: inline-block;
+            opacity: 0;
+            transition: transform 0.3s, opacity 0.2s;
+        }
+
+        &:before {
+            margin-right: 10px;
+            content: '[';
+            transform: translateX(20px);
+        }
+
+        &:after {
+            margin-left: 10px;
+            content: ']';
+            transform: translateX(-20px);
+        }
+
+        &:hover,
+        &:focus {
+            &:before,
+            &:after {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+    }
+
+    &__link-social {
+        @extend %footer-link;
+
+        color: $text-invert-color;
+        font-size: 25px;
+        margin-left: 15px;
+
+        .icon-twitter {
+            color: #00acee;
+        }
+
+        .icon-facebook {
+            color: #3b5998;
+        }
+
+        &:before {
+            color: $text-color;
+            position: absolute;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        &:hover,
+        &:focus {
+            &:before {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+        }
+    }
+}

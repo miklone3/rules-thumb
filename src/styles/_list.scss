@@ -1,0 +1,43 @@
+.app-list {
+    .app-list__item {
+        display: flex;
+    }
+
+    &--inline {
+        display: flex;
+
+        .app-list__item {
+            display: inline-flex;
+        }
+    }
+}
+
+@mixin app-list-columns($num-columns) {
+    $width-column: (100 / $num-columns) / 100;
+    $spacing: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$spacing;
+    margin-left: -$spacing;
+
+    &__item {
+        position: relative;
+        width: 100%;
+        padding-right: $spacing;
+        padding-left: $spacing;
+
+        @media screen and (min-width: 768px) {
+            flex: 0 0 percentage($width-column);
+            max-width: percentage($width-column);
+        }
+    }
+}
+
+.app-list-two-columns {
+  @include app-list-columns(2);
+}
+
+.app-list-three-columns {
+  @include app-list-columns(3);
+}

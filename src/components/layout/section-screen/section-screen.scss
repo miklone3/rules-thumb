@@ -1,0 +1,12 @@
+section-screen {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen AND (min-height: 568px) AND (min-width: 361px){
+    height: 100vh;
+  }
+}

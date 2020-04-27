@@ -1,0 +1,92 @@
+{
+    "pastTrialsCategory": [
+        {
+            "id": 1,
+            "value": "Entertaiment"
+        },
+        {
+            "id": 2,
+            "value": "Business"
+        },
+        {
+            "id": 3,
+            "value": "Politics"
+        },
+        {
+            "id": 4,
+            "value": "Religious"
+        }
+    ],
+    "pastTrials": [
+        {
+            "id": 1,
+            "name": "Pope Francis",
+            "opinion": "He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)",
+            "time": "05/18/2020",
+            "votes": {
+                "thumbUp": 0,
+                "thumbDown": 0
+            },
+            "image": "assets/images/background-papa.png",
+            "wiki": "https://en.wikipedia.org/wiki/Pope_Francis",
+            "category": 4,
+            "currentPastTrials": true
+        },
+        {
+            "id": 2,
+            "name": "Kanye West",
+            "opinion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum similique odit qui tempore aperiam sequi iusto unde voluptates dolorum vel necessitatibus nam quae ipsa voluptate, eos ad aspernatur iste velit.",
+            "time": "03/26/2020",
+            "votes": {
+                "thumbUp": 0,
+                "thumbDown": 0
+            },
+            "image": "assets/images/kanye.png",
+            "wiki": "https://en.wikipedia.org/wiki/Kanye_West",
+            "category": 1,
+            "currentPastTrials": false
+        },
+        {
+            "id": 3,
+            "name": "Mark Zuckerberg",
+            "opinion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum similique odit qui tempore aperiam sequi iusto unde voluptates dolorum vel necessitatibus nam quae ipsa voluptate, eos ad aspernatur iste velit.",
+            "time": "03/26/2020",
+            "votes": {
+                "thumbUp": 0,
+                "thumbDown": 0
+            },
+            "image": "assets/images/mark.png",
+            "wiki": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
+            "category": 2,
+            "currentPastTrials": false
+        },
+        {
+            "id": 4,
+            "name": "Cristina Fernández de Kirchner",
+            "opinion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum similique odit qui tempore aperiam sequi iusto unde voluptates dolorum vel necessitatibus nam quae ipsa voluptate, eos ad aspernatur iste velit.",
+            "time": "03/26/2020",
+            "votes": {
+                "thumbUp": 0,
+                "thumbDown": 0
+            },
+            "image": "assets/images/cristina.png",
+            "wiki": "https://en.wikipedia.org/wiki/Cristina_Fern%C3%A1ndez_de_Kirchner",
+            "category": 3,
+            "currentPastTrials": false
+        },
+        {
+            "id": 5,
+            "name": "Malala Yousafzai",
+            "opinion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum similique odit qui tempore aperiam sequi iusto unde voluptates dolorum vel necessitatibus nam quae ipsa voluptate, eos ad aspernatur iste velit.",
+            "time": "03/26/2020",
+            "votes": {
+                "thumbUp": 0,
+                "thumbDown": 0
+            },
+            "image": "assets/images/malala.png",
+            "wiki": "https://en.wikipedia.org/wiki/Malala_Yousafzai",
+            "category": 1,
+            "currentPastTrials": false
+        }
+    ]
+}

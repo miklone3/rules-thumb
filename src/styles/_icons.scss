@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'thumb-icon';
+  src:  url('../assets/fonts/thumb-icon.eot?gzscc5');
+  src:  url('../assets/fonts/thumb-icon.eot?gzscc5#iefix') format('embedded-opentype'),
+    url('../assets/fonts/thumb-icon.ttf?gzscc5') format('truetype'),
+    url('../assets/fonts/thumb-icon.woff?gzscc5') format('woff'),
+    url('../assets/fonts/thumb-icon.svg?gzscc5#thumb-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'thumb-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-times:before {
+  content: "\e904";
+}
+.icon-thumb-down:before {
+  content: "\e900";
+}
+.icon-search:before {
+  content: "\e901";
+}
+.icon-share:before {
+  content: "\e902";
+}
+.icon-thumb-up:before {
+  content: "\e903";
+}
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-wikipedia:before {
+  content: "\eac8";
+}

@@ -1,0 +1,92 @@
+@mixin thumb-votes-backbroud($color) {
+    background-color: rgba($color: $color, $alpha: 0.9);
+
+    &:hover {
+        background-color: rgba($color: $color, $alpha: 0.95);
+
+        i {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.thumb-main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    &__body {
+        position: relative;
+        padding: 35px;
+    }
+
+    &__footer {
+        height: 80px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+.thum-main-box {
+    position: relative;
+    z-index: 1;
+    color: $text-invert-color;
+    font-weight: $font-weight-thin;
+
+    &__caption {}
+
+    &__title {
+        font-size: 60px;
+        line-height: 1em;
+        font-weight: $font-weight-regular;
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        font-size: 21px;
+        line-height: 1.142em;
+        margin-bottom: 20px;
+    }
+
+    &__more {
+        display: block;
+        margin-bottom: 40px;
+
+        a {
+            color: $text-invert-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.thumb-main-votes {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+        flex: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: $text-invert-color;
+        font-size: 36px;
+        height: 100%;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all .25s linear;
+
+        i {
+            transition: all .25s linear;
+        }
+
+        &--up {
+            @include thumb-votes-backbroud($thumb-up-color);
+        }
+
+        &--down {
+            @include thumb-votes-backbroud($thumb-down-color);
+        }
+    }
+}

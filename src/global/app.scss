@@ -1,0 +1,36 @@
+/*
+  Global App CSS
+  ----------------------
+  Use this file for styles that should be applied to all components.
+  For example, "font-family" within the "body" selector is a CSS property
+  most apps will want applied to all components.
+
+  Any global CSS variables should also be applied here.
+*/
+
+@import "src/styles/reset";
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: $font-size;
+    height: 100%;
+    color: $text-color;
+    line-height: $line-height-regular;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    *, *:after, *:before {
+        box-sizing: border-box;
+    }
+}
+
+@import "src/styles/icons";
+@import "src/styles/typography";
+@import "src/styles/list";
